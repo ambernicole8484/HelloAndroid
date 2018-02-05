@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        style="@style/Udacity_Image_Views"
+        android:scaleType="fitStart"
+        android:src="@drawable/knowledgeispower" />
+
+    <ImageView
+        android:id="@+id/udacity_logo"
+        style="@style/Udacity_Image_Views"
+        android:layout_below="@id/image1"
+        android:scaleType="fitCenter"
+        android:paddingBottom="@dimen/padding"
+        android:src="@drawable/udacity_logo" />
+
+    <TextView
+        android:id="@+id/udacity"
+        style="@style/Udacity_Contact_Info"
+        android:layout_below="@id/udacity_logo"
+        android:drawableTop="@drawable/location"
+        android:text="@string/udacity" />
+
+    <TextView
+        android:id="@+id/street_address"
+        style="@style/Udacity_Contact_Info"
+        android:layout_below="@id/udacity"
+        android:text="@string/street_address" />
+
+    <TextView
+        android:id="@+id/city_state_zip"
+        style="@style/Udacity_Contact_Info"
+        android:layout_below="@id/street_address"
+        android:text="@string/city_stete_zip" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        style="@style/Udacity_Contact_Info"
+        android:layout_below="@id/city_state_zip"
+        android:drawableTop="@drawable/phone"
+        android:text="@string/phone_number" />
+
+    <TextView
+        android:id="@+id/website"
+        style="@style/Udacity_Contact_Info"
+        android:layout_below="@id/phone_number"
+        android:autoLink="web"
+        android:drawableTop="@drawable/mouse"
+        android:text="@string/website" />
+
+</RelativeLayout>

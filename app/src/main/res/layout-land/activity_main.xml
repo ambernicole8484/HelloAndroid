@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/udacity_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/udacity_logo" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/udacity_logo"
+        android:scaleType="fitEnd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/knowledgeispower" />
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/Udacity_Contant_Info_Landscape"
+        android:text="@string/landscape_address"
+        android:drawableLeft="@drawable/location"
+        android:drawableStart="@drawable/location"
+        android:paddingTop="@dimen/padding"
+        android:paddingBottom="@dimen/padding" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        style="@style/Udacity_Contant_Info_Landscape"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/address"
+        android:drawableLeft="@drawable/phone"
+        android:drawableStart="@drawable/phone"
+        android:paddingBottom="@dimen/padding"
+        android:text="@string/phone_number"
+        android:paddingTop="@dimen/udacity_padding" />
+
+    <TextView
+        android:id="@+id/website"
+        style="@style/Udacity_Contant_Info_Landscape"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/phone_number"
+        android:autoLink="web"
+        android:drawableLeft="@drawable/mouse"
+        android:drawableStart="@drawable/mouse"
+        android:text="@string/website" />
+
+</RelativeLayout>
